@@ -89,17 +89,35 @@ a:hover {
   }
 }
 
-.breadcrumbs_link {
-  color: $colorBreadcrumbsText;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-}
+.breadcrumbs {
+  &_ul {
+    list-style-type: none;
+    display: flex;
+  }
 
-.breadcrumbs_link_site {
-  color: $colorSelectorSite;
-  font-weight: 700px;
+  &_li:not(:last-child):after {
+    content: " /";
+    padding-left: 8px;
+    padding-right: 8px;
+    color: $colorBreadcrumbsText;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  &_link {
+    color: $colorBreadcrumbsText;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  &_li:last-child .breadcrumbs_link {
+    color: $colorSelectorSite;
+    font-weight: 700px;
+  } 
 }
 
 .filter-sort {

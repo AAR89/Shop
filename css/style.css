@@ -430,6 +430,20 @@ a:hover {
   top: 50;
 }
 
+.breadcrumbs_ul {
+  list-style-type: none;
+  display: flex;
+}
+.breadcrumbs_li:not(:last-child):after {
+  content: " /";
+  padding-left: 8px;
+  padding-right: 8px;
+  color: #636363;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
 .breadcrumbs_link {
   color: #636363;
   font-size: 14px;
@@ -437,8 +451,7 @@ a:hover {
   font-weight: 300;
   line-height: normal;
 }
-
-.breadcrumbs_link_site {
+.breadcrumbs_li:last-child .breadcrumbs_link {
   color: #f16d7f;
   font-weight: 700px;
 }
