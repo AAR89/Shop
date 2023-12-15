@@ -858,7 +858,6 @@ body {
 
 .card_box {
   margin-top: 96px;
-  margin-left: 230px;
   display: flex;
   justify-content: center;
   gap: 128px;
@@ -965,10 +964,10 @@ body {
   font-weight: 300;
   line-height: normal;
 }
-.card_box_right .address_input {
+.card_box_right .input_div {
   stroke-width: 1px;
   stroke: #a4a4a4;
-  width: 359;
+  width: 360px;
   height: 44px;
   flex-shrink: 0;
   color: #b1b1b1;
@@ -976,6 +975,7 @@ body {
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+  margin-top: 20px;
 }
 .card_box_right input::-webkit-input-placeholder {
   padding-top: 13px;
@@ -1008,11 +1008,10 @@ body {
   border: 3px solid transparent;
   color: #fff;
 }
-
-.total {
+.card_box .total {
   margin-top: 57px;
 }
-.total_box {
+.card_box .total_box {
   width: 360px;
   height: 214px;
   display: flex;
@@ -1024,7 +1023,7 @@ body {
   padding-right: 34px;
   padding-top: 39px;
 }
-.total_text {
+.card_box .total_text {
   justify-content: flex-end;
   gap: 22px;
   color: #4a4a4a;
@@ -1034,7 +1033,7 @@ body {
   font-weight: 400;
   line-height: normal;
 }
-.total_price {
+.card_box .total_price {
   justify-content: flex-end;
   gap: 22px;
   color: #4a4a4a;
@@ -1044,34 +1043,34 @@ body {
   font-weight: 400;
   line-height: normal;
 }
-.total .small_text {
+.card_box .total .small_text {
   display: flex;
   flex-wrap: nowrap;
   gap: 30px;
   justify-content: flex-end;
 }
-.total .big_text {
+.card_box .total .big_text {
   display: flex;
   flex-wrap: nowrap;
   gap: 25px;
   margin-top: 12px;
   justify-content: flex-end;
 }
-.total_text_big {
+.card_box .total_text_big {
   color: #222;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
 }
-.total .total_text_big_price {
+.card_box .total .total_text_big_price {
   color: #f16d7f;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
-.total_border {
+.card_box .total_border {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1079,7 +1078,7 @@ body {
   border-bottom: 1px solid #e2e2e2;
   padding-top: 21px;
 }
-.total_button {
+.card_box .total_button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1090,17 +1089,17 @@ body {
   border: 1px solid transparent;
   transition: 0.7ms;
 }
-.total_button_text {
+.card_box .total_button_text {
   color: #fff;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
 }
-.total .total_button:hover {
+.card_box .total .total_button:hover {
   filter: drop-shadow(0px 4px 4px rgba(241, 109, 127, 0.69));
   background-color: #ffffff;
 }
-.total .total_button_text:hover {
+.card_box .total .total_button_text:hover {
   color: #f16d7f;
 }/*# sourceMappingURL=style.css.map */
