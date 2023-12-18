@@ -1,0 +1,171 @@
+.registration {
+  display: flex;
+  gap: 128px;
+  margin-top: 64px;
+
+  &__left {
+    &_title {
+      @include registrationTitleStyle;
+    }
+
+    &_input {
+      display: flex;
+      margin-top: 21px;
+      width: 359px;
+      height: 44px;
+      stroke-width: 1px;
+      stroke: #a4a4a4;
+      padding-left: 17px;
+      color: #b1b1b1;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+    }
+
+    &_elipse_box {
+      margin-top: 33px;
+      display: flex;
+      align-items: center;
+
+      &_figuire {
+        display: flex;
+        gap: 10px;
+
+        &_checked {
+          width: 17px;
+          height: 17px;
+          flex-shrink: 0;
+          stroke-width: 1px;
+          stroke: #a4a4a4;
+        }
+
+        &_text {
+          color: $filterTextColor;
+          font-size: 11px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: normal;
+        }
+      }
+    }
+
+    &_elipse_box_figuire_rigth {
+      display: flex;
+      gap: 10px;
+      margin-left: 20px;
+    }
+
+    &_title2 {
+      margin-top: 32px;
+      @include registrationTitleStyle;
+    }
+
+    &_passwordText {
+      width: 359px;
+      margin-top: 15.5px;
+      color: #b1b1b1;
+      font-family: Lato;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+    }
+
+    &_submit {
+      width: 167px;
+      height: 50px;
+      flex-shrink: 0;
+      margin-top: 39px;
+      margin-bottom: 39px;
+      font-family: Lato;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      transition: 0.7s;
+      opacity: 0.7;
+      background-color: white;
+      filter: drop-shadow(0px 4px 4px rgba(241, 109, 127, 0.69));
+      color: $colorSelectorSite;
+      border: 1px solid transparent;
+
+      &_img {
+        margin-left: 20px;
+        fill: $colorSelectorSite;
+      }
+    }
+
+    .registration__left_submit:hover {
+      color: white;
+      background-color: $colorSelectorSite;
+
+      border: 1px solid transparent;
+    }
+
+    .registration__left_submit_img:hover {
+      fill: $colorSelectorSite;
+    }
+  }
+
+  &__right {
+    width: 652px;
+    height: 334px;
+    flex-shrink: 0;
+    &_title {
+      color: $filterTextColor;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+    }
+
+    &_text {
+      margin-top: 22px;
+      color: $filterTextColor;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+
+      &_box {
+        display: flex;
+        align-items: center;
+        gap: 23px;
+        margin-top: 27px;
+        margin-bottom: 28px;
+
+        &_img {
+          width: 20px;
+          height: 16px;
+          flex-shrink: 0;
+        }
+
+        &_text {
+          color: $filterTextColor;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: normal;
+        }
+      }
+    }
+  }
+}
+
+.subscribe {
+  display: flex;
+  align-items: center;
+  gap: 327px;
+  padding-top: 97px;
+  padding-bottom: 126px;
+  background: rgba(244, 244, 244, 0.7);
+
+  &_text {
+    &_text {
+      width: 360px;
+      height: 99px;
+      flex-shrink: 0;
+    }
+  }
+}

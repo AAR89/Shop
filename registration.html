@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping card</title>
+    <title>Registration</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
@@ -65,84 +65,88 @@
         </nav>
     </header>
     <div class="top-head centering">
-        <a href="#" class="top-head_heading">SHOPPING CART</a>
+        <a href="#" class="top-head_heading">REGISTRATION</a>
     </div>
-    <div class="card_box centering">
-        <div class="card_box_left">
-            <div class="card centering">
-                <img src="img/shoppingcard_img/catalog2.svg" alt="" class="card_img">
-                <div class="card_text">
-                    <p class="card_text_title">MANGO PEOPLE T-SHIRT</p>
-                    <p class="card_text_main">Price: <span class="card_text_price">$300</span></p>
-                    <p class="card_text_main">Color: <span class="card_text_light">Red</span></p>
-                    <p class="card_text_main">Size: <span class="card_text_light">Xl</span></p>
-                    <p class="card_text_main">Quantity: <input id="input1" type="number" minlength="1"></p>
-                </div>
-                <img src="icon/shoppingcard_img_icon/Vector.svg" alt="" class="card_icon">
+    <div class="registration centering">
+        <div class="registration__left">
+            <div class="registration__left_title">Your Name</div>
+            <input type="text" class="registration__left_input" placeholder="First Name">
+            <input type="text" class="registration__left_input" placeholder="Last Name">
+            <div class="registration__left_elipse_box">
+                <figure class="registration__left_elipse_box_figuire">
+                    <input class="registration__left_elipse_box_figuire_checked" type="radio" name="my-input" id="yes"
+                        value="yes" />
+                    <p class="registration__left_elipse_box_figuire_text">Male</p>
+                </figure>
+                <figure class="registration__left_elipse_box_figuire_rigth">
+                    <input class="registration__left_elipse_box_figuire_checked" type="radio" name="my-input" id="no"
+                        value="no" />
+                    <p class="registration__left_elipse_box_figuire_text">Female</p>
+                </figure>
             </div>
-            <div class="card centering">
-                <img src="img/shoppingcard_img/catalog2.svg" alt="" class="card_img">
-                <div class="card_text">
-                    <p class="card_text_title">MANGO PEOPLE T-SHIRT</p>
-                    <p class="card_text_main">Price: <span class="card_text_price">$300</span></p>
-                    <p class="card_text_main">Color: <span class="card_text_light">Red</span></p>
-                    <p class="card_text_main">Size: <span class="card_text_light">Xl</span></p>
-                    <p class="card_text_main">Quantity: <input id="input1" type="number" minlength="1"></p>
-                </div>
-                <img src="icon/shoppingcard_img_icon/Vector.svg" alt="" class="card_icon">
-            </div>
-            <div class="button-box">
-                <button class="button"><span>
-                        <p class="button_text">CLEAR SHOPPING CART</p>
-                    </span></button>
-                <button class="button">
-                    <p class="button_text">CONTINUE SHOPPING</p>
-                </button>
-            </div>
-        </div>
-        <div class="card_box_right">
-            <div class="address">SHIPPING ADRESS</div>
-            <div class="inputs">
-                <div class="input-box"><input type="text" class="input_div input_div_first" placeholder="Bangladesh"></div>
-                <div class="input-box"><input type="text" class="input_div" placeholder="State"></div>
-                <div class="input-box"><input type="text" class="input_div" placeholder="Postcode / Zip"></div>
-            </div>
-            <button type="submit" class="submit">
-                GET A QUOTE
+            <div class="registration__left_title2">Login details</div>
+            <input type="email" class="registration__left_input" placeholder="Email">
+            <input type="password" class="registration__left_input" placeholder="Password" minlength="8" required>
+            <p class="registration__left_passwordText">
+                Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters
+            </p>
+            <button class="registration__left_submit" type="submit">
+                JOIN NOW
+                <img src="icon/registraton_icon/reg_icon.svg" alt="Registration icon"
+                    class="registration__left_submit_img">
+
             </button>
-            <div class="total">
-                <div class="total_box">
-                    <div class="small_text">
-                        <p class="total_text">SUB TOTAL <p class="total_price">$900</p></p>
-                    </div>
-                    <div class="big_text">
-                        <p class="total_text_big">GRAND TOTAL
-                            <p class="total_text_big_price">$900</p>
-                            </p>
-                    </div>
-                    <div class="total_border"></div>
-                    <button type="button" class="total_button"><p >PROCEED TO CHECKOUT</p></button>
-                </div>
-            </div>        </div>
-    </div>
-    <div class="promo centering">
-        <div class="promo_box">
-            <img class="promo_img" src="icon/shoppingcard_img_icon/promo1.svg" alt="icon1">
-            <h1 class="promo_title">Free Delivery</h1>
-            <h3 class="promo_text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with
-                extensive models.</h3>
         </div>
-        <div class="promo_box">
-            <img class="promo_img_2" src="icon/shoppingcard_img_icon/promo2.svg" alt="icon2">
-            <h1 class="promo_title">Sales & discounts</h1>
-            <h3 class="promo_text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with
-                extensive models.</h3>
-        </div>
-        <div class="promo_box">
-            <img class="promo_img" src="icon/shoppingcard_img_icon/promo3.svg" alt="icon3">
-            <h1 class="promo_title">Quality assurance</h1>
-            <h3 class="promo_text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with
-                extensive models.</h3>
+        <div class="registration__right">
+            <p class="registration__right_title">
+                LOYALTY HAS ITS PERKS
+            </p>
+            <p class="registration__right_text">
+                Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as
+                soon as you join:
+            </p>
+            <figure class="registration__right_text_box"> <svg class="registration__right_text_box_img" width="20"
+                    height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M19.8035 0H18.0904C17.8502 0 17.6222 0.111827 17.4752 0.303176L7.3702 13.2826L2.52481 7.05754C2.45151 6.96318 2.35808 6.88688 2.25153 6.83438C2.14499 6.78187 2.0281 6.75451 1.90963 6.75437H0.196467C0.032258 6.75437 -0.0584248 6.94572 0.0420614 7.07494L6.75503 15.6981C7.06874 16.1006 7.67166 16.1006 7.98782 15.6981L19.9579 0.318087C20.0584 0.191349 19.9677 0 19.8035 0Z"
+                        fill="black" />
+                </svg>
+                <div class="registration__right_text_box_text">15% off welcome offer</div>
+            </figure>
+            <figure class="registration__right_text_box"> <svg class="registration__right_text_box_img" width="20"
+                    height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M19.8035 0H18.0904C17.8502 0 17.6222 0.111827 17.4752 0.303176L7.3702 13.2826L2.52481 7.05754C2.45151 6.96318 2.35808 6.88688 2.25153 6.83438C2.14499 6.78187 2.0281 6.75451 1.90963 6.75437H0.196467C0.032258 6.75437 -0.0584248 6.94572 0.0420614 7.07494L6.75503 15.6981C7.06874 16.1006 7.67166 16.1006 7.98782 15.6981L19.9579 0.318087C20.0584 0.191349 19.9677 0 19.8035 0Z"
+                        fill="black" />
+                </svg>
+                <div class="registration__right_text_box_text">Free shipping, returns and exchanges on all orders</div>
+            </figure>
+            <figure class="registration__right_text_box"> <svg class="registration__right_text_box_img" width="20"
+                    height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M19.8035 0H18.0904C17.8502 0 17.6222 0.111827 17.4752 0.303176L7.3702 13.2826L2.52481 7.05754C2.45151 6.96318 2.35808 6.88688 2.25153 6.83438C2.14499 6.78187 2.0281 6.75451 1.90963 6.75437H0.196467C0.032258 6.75437 -0.0584248 6.94572 0.0420614 7.07494L6.75503 15.6981C7.06874 16.1006 7.67166 16.1006 7.98782 15.6981L19.9579 0.318087C20.0584 0.191349 19.9677 0 19.8035 0Z"
+                        fill="black" />
+                </svg>
+                <div class="registration__right_text_box_text">$10 off a purchase on your birthday</div>
+            </figure>
+            <figure class="registration__right_text_box"> <svg class="registration__right_text_box_img" width="20"
+                    height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M19.8035 0H18.0904C17.8502 0 17.6222 0.111827 17.4752 0.303176L7.3702 13.2826L2.52481 7.05754C2.45151 6.96318 2.35808 6.88688 2.25153 6.83438C2.14499 6.78187 2.0281 6.75451 1.90963 6.75437H0.196467C0.032258 6.75437 -0.0584248 6.94572 0.0420614 7.07494L6.75503 15.6981C7.06874 16.1006 7.67166 16.1006 7.98782 15.6981L19.9579 0.318087C20.0584 0.191349 19.9677 0 19.8035 0Z"
+                        fill="black" />
+                </svg>
+                <div class="registration__right_text_box_text">Early access to products</div>
+            </figure>
+            <figure class="registration__right_text_box"> <svg class="registration__right_text_box_img" width="20"
+                    height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M19.8035 0H18.0904C17.8502 0 17.6222 0.111827 17.4752 0.303176L7.3702 13.2826L2.52481 7.05754C2.45151 6.96318 2.35808 6.88688 2.25153 6.83438C2.14499 6.78187 2.0281 6.75451 1.90963 6.75437H0.196467C0.032258 6.75437 -0.0584248 6.94572 0.0420614 7.07494L6.75503 15.6981C7.06874 16.1006 7.67166 16.1006 7.98782 15.6981L19.9579 0.318087C20.0584 0.191349 19.9677 0 19.8035 0Z"
+                        fill="black" />
+                </svg>
+                <div class="registration__right_text_box_text">Exclusive offers & rewards</div>
+            </figure>
+
+
         </div>
     </div>
     <div class="subscribe centering">

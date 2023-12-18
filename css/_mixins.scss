@@ -1,15 +1,23 @@
-@mixin centerflex{
-    display: flex;
-    align-items: center;
+@mixin centerflex {
+  display: flex;
+  align-items: center;
 }
 
-@mixin priceStyle{
-    justify-content: flex-end;
-      gap: 22px;
-      color: #4a4a4a;
-      font-family: Lato;
-      font-size: 11px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
+@mixin priceStyle {
+  justify-content: flex-end;
+  gap: 22px;
+  color: #4a4a4a;
+  font-family: Lato;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@mixin registrationTitleStyle {
+  color: $filterTextColor;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
 }
