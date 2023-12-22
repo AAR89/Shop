@@ -9,7 +9,7 @@
   background: #f7f7f7;
 }
 
-.product {
+.product_another {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -106,7 +106,35 @@
   }
 }
 
-@media (max-width: 768px){
-  
-}
+@media (max-width: 375px) {
+  .product-box {
+    padding-top: 85px;
+  }
 
+  .product_another {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: end;
+    justify-items: stretch;
+    &_img {
+      width: 374px;
+    }
+    &_buttom {
+      position: absolute;
+    }
+  }
+
+  .selectors {
+    &_box {
+    }
+
+    &_text {
+      color: #6f6e6e;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+}

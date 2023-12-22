@@ -606,10 +606,11 @@ body {
   .subscribe {
     display: grid;
     grid-template-columns: repeat(1, 550px);
-    justify-content: center;
+    justify-items: center;
     gap: 48px;
     padding-top: 64px;
     padding-bottom: 219px;
+    justify-content: center;
 
     &_left {
       width: 550px;
