@@ -542,9 +542,6 @@ a:hover {
   background-color: #f16d7f;
   border: 3px solid transparent;
 }
-.card_box_left .button_text:hover {
-  color: #fff;
-}
 .card_box_right {
   margin-top: 17px;
   white-space: nowrap;
@@ -691,6 +688,35 @@ a:hover {
   color: #f16d7f;
 }
 
+@media (max-width: 768px) {
+  .card_box {
+    display: grid;
+    gap: 0px;
+  }
+  .card_box_left .card {
+    width: 734px;
+    margin-bottom: 62px;
+  }
+  .card_box_left .card_text_title {
+    margin-bottom: 40px;
+  }
+  .card_box_left .card_icon {
+    margin-left: 80px;
+  }
+  .card_box_left .button-box {
+    justify-content: center;
+    gap: 48px;
+  }
+  .card_box_right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 64px;
+  }
+  .card_box_right .total {
+    margin-top: 37px;
+  }
+}
 .registration {
   display: flex;
   gap: 128px;
