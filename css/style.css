@@ -1,7 +1,3 @@
-a:hover {
-  opacity: 0.6;
-}
-
 .breadcrumbs_link_site {
   color: #f16d7f;
   font-weight: 700;
@@ -114,10 +110,6 @@ summary {
 
 summary::-webkit-details-marker {
   display: none;
-}
-
-a:hover {
-  opacity: 0.6;
 }
 
 .top-head {
@@ -998,6 +990,17 @@ a:hover {
     line-height: normal;
   }
 }
+@media (max-width: 375px) {
+  .top-head_heading {
+    padding-left: 0px;
+  }
+  .registration {
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 8px;
+    margin-bottom: 96px;
+    gap: 0px;
+  }
+}
 html,
 body {
   width: 100%;
@@ -1648,6 +1651,21 @@ body {
   .subscribe_title {
     color: #222;
     font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 153.2%;
+  }
+  .subscribe_big {
+    color: #222224;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 153.2%; /* 36.768px */
+  }
+  .subscribe_little_title {
+    color: #222224;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
