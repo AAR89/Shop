@@ -13,34 +13,6 @@ a:hover {
   opacity: 0.6;
 }
 
-.headerNav {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 18px;
-  padding-bottom: 19px;
-  &_left {
-    display: flex;
-    gap: 41px;
-    align-items: flex-end;
-  }
-  &_right {
-    display: flex;
-    gap: 33px;
-    align-items: flex-end;
-  }
-}
-
-.headNav_right_basket_text {
-  position: absolute;
-  right: -4px;
-  bottom: 17px;
-  color: #fff;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
 .top-head {
   background: #f8f3f4;
   padding-top: 60px;
@@ -239,35 +211,50 @@ a:hover {
 .catalog_box {
   max-width: 360px;
   background-color: #f8f8f8;
+  padding-bottom: 20px;
   &_img {
     width: 100%;
   }
-  &_title {
-    color: #000;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
-  &_text {
-    color: #5d5d5d;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-  }
-  &_price {
-    color: $colorSelectorSite;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+
+  &_textbox {
+    padding-left: 16px;
+    padding-top: 25px;
+
+    &_title {
+      color: #000;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      padding-bottom: 12px;
+    }
+    &_text {
+      width: 314px;
+      color: #5d5d5d;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      padding-bottom: 18px;
+    }
+    &_price {
+      color: $colorSelectorSite;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    .hidden {
+      display: none;
+    }
   }
 }
 
 .catalog_box2 {
-  max-width: 360px;
+  width: 360px;
   background-color: #f8f8f8;
+  padding-bottom: 20px;
   &_card {
     margin-bottom: 3px;
     background-color: #f7e4e2;
@@ -278,26 +265,34 @@ a:hover {
     padding-bottom: 11px;
     width: 100%;
   }
-  &_title {
-    color: #000;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
-  &_text {
-    color: #5d5d5d;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-  }
-  &_price {
-    color: $colorSelectorSite;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+  &_textbox2 {
+    padding-left: 16px;
+    padding-top: 22px;
+
+    &_title {
+      color: #000;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      padding-bottom: 12px;
+    }
+    &_text {
+      width: 314px;
+      color: #5d5d5d;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      padding-bottom: 18px;
+    }
+    &_price {
+      color: $colorSelectorSite;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
   }
 }
 
@@ -331,5 +326,53 @@ a:hover {
   }
   &_link.last {
     margin-left: -18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .top-head_heading {
+    padding-left: 16px;
+  }
+
+  .breadcrumbs {
+    padding-right: 16px;
+  }
+
+  .sort {
+    padding-left: 112px;
+  }
+
+  .catalog {
+    margin-left: 16px;
+    gap: 16px;
+  }
+
+  .catalog_box_hidden{
+    display: none;
+    &_card{
+      display: none;
+    }
+  
+    &_textbox{
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 375px){
+  .top-head{
+    display: grid;
+    justify-content: center;
+    padding-top: 24px;
+    gap: 32px;
+  }
+
+  .filter_heading{
+    display: none;
+  }
+
+  .catalog{
+    justify-content: center;
+    margin-left: 0px;
   }
 }

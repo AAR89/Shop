@@ -2,10 +2,10 @@
 @import "mixins";
 
 html,
-  body {
-    width: 100%;
-    overflow-x: hidden;
-  }
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
 
 * {
   padding: 0;
@@ -38,7 +38,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding-top: 18px;
-  padding-bottom: 19px;
+  padding-bottom: 18px;
 }
 
 .headNav_left {
@@ -61,6 +61,17 @@ body {
     position: absolute;
     right: -9px;
     bottom: 15px;
+  }
+
+  &_basket_text {
+    position: absolute;
+    right: -4px;
+    bottom: 17px;
+    color: #fff;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
   }
 }
 
@@ -459,8 +470,6 @@ body {
   justify-content: space-between;
   padding-top: 30px;
   padding-bottom: 30px;
-  padding-left: 32px;
-  padding-right: 32px;
 }
 
 .footer_left {
@@ -490,6 +499,13 @@ body {
   }
   &_logo {
     color: #000000;
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    padding-left: 32px;
+    padding-right: 32px;
   }
 }
 
@@ -615,6 +631,8 @@ body {
 
   .footer {
     gap: 382px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 }
 
@@ -627,6 +645,7 @@ body {
 
   .headNav_left {
     align-items: center;
+    margin-left: 16px;
   }
 
   .headNav_right {
@@ -745,6 +764,4 @@ body {
     justify-items: center;
     gap: 40px;
   }
-
-
 }

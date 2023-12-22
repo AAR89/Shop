@@ -120,34 +120,6 @@ a:hover {
   opacity: 0.6;
 }
 
-.headerNav {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 18px;
-  padding-bottom: 19px;
-}
-.headerNav_left {
-  display: flex;
-  gap: 41px;
-  align-items: flex-end;
-}
-.headerNav_right {
-  display: flex;
-  gap: 33px;
-  align-items: flex-end;
-}
-
-.headNav_right_basket_text {
-  position: absolute;
-  right: -4px;
-  bottom: 17px;
-  color: #fff;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
 .top-head {
   background: #f8f3f4;
   padding-top: 60px;
@@ -326,35 +298,47 @@ a:hover {
 .catalog_box {
   max-width: 360px;
   background-color: #f8f8f8;
+  padding-bottom: 20px;
 }
 .catalog_box_img {
   width: 100%;
 }
-.catalog_box_title {
+.catalog_box_textbox {
+  padding-left: 16px;
+  padding-top: 25px;
+}
+.catalog_box_textbox_title {
   color: #000;
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  padding-bottom: 12px;
 }
-.catalog_box_text {
+.catalog_box_textbox_text {
+  width: 314px;
   color: #5d5d5d;
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+  padding-bottom: 18px;
 }
-.catalog_box_price {
+.catalog_box_textbox_price {
   color: #f16d7f;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
+.catalog_box_textbox .hidden {
+  display: none;
+}
 
 .catalog_box2 {
-  max-width: 360px;
+  width: 360px;
   background-color: #f8f8f8;
+  padding-bottom: 20px;
 }
 .catalog_box2_card {
   margin-bottom: 3px;
@@ -366,21 +350,28 @@ a:hover {
   padding-bottom: 11px;
   width: 100%;
 }
-.catalog_box2_title {
+.catalog_box2_textbox2 {
+  padding-left: 16px;
+  padding-top: 22px;
+}
+.catalog_box2_textbox2_title {
   color: #000;
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  padding-bottom: 12px;
 }
-.catalog_box2_text {
+.catalog_box2_textbox2_text {
+  width: 314px;
   color: #5d5d5d;
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+  padding-bottom: 18px;
 }
-.catalog_box2_price {
+.catalog_box2_textbox2_price {
   color: #f16d7f;
   font-size: 16px;
   font-style: normal;
@@ -417,6 +408,45 @@ a:hover {
   margin-left: -18px;
 }
 
+@media (max-width: 768px) {
+  .top-head_heading {
+    padding-left: 16px;
+  }
+  .breadcrumbs {
+    padding-right: 16px;
+  }
+  .sort {
+    padding-left: 112px;
+  }
+  .catalog {
+    margin-left: 16px;
+    gap: 16px;
+  }
+  .catalog_box_hidden {
+    display: none;
+  }
+  .catalog_box_hidden_card {
+    display: none;
+  }
+  .catalog_box_hidden_textbox {
+    display: none;
+  }
+}
+@media (max-width: 375px) {
+  .top-head {
+    display: grid;
+    justify-content: center;
+    padding-top: 24px;
+    gap: 32px;
+  }
+  .filter_heading {
+    display: none;
+  }
+  .catalog {
+    justify-content: center;
+    margin-left: 0px;
+  }
+}
 .card_box {
   margin-top: 96px;
   display: flex;
@@ -840,7 +870,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding-top: 18px;
-  padding-bottom: 19px;
+  padding-bottom: 18px;
 }
 
 .headNav_left {
@@ -862,6 +892,16 @@ body {
   position: absolute;
   right: -9px;
   bottom: 15px;
+}
+.headNav_right_basket_text {
+  position: absolute;
+  right: -4px;
+  bottom: 17px;
+  color: #fff;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .main {
@@ -1220,8 +1260,6 @@ body {
   justify-content: space-between;
   padding-top: 30px;
   padding-bottom: 30px;
-  padding-left: 32px;
-  padding-right: 32px;
 }
 
 .footer_left {
@@ -1254,6 +1292,12 @@ body {
   color: #000000;
 }
 
+@media (max-width: 1024px) {
+  .footer {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
 @media (max-width: 768px) {
   .headNav_left {
     margin-left: 32px;
@@ -1350,6 +1394,8 @@ body {
   }
   .footer {
     gap: 382px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 }
 @media (max-width: 375px) {
@@ -1360,6 +1406,7 @@ body {
   }
   .headNav_left {
     align-items: center;
+    margin-left: 16px;
   }
   .headNav_right {
     align-items: center;
