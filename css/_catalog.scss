@@ -31,7 +31,7 @@ summary::-webkit-details-marker {
     display: flex;
   }
 
-  &_li:not(:last-child):after {
+  &_link:not(:last-child):after {
     content: " /";
     padding-left: 8px;
     padding-right: 8px;
@@ -50,9 +50,13 @@ summary::-webkit-details-marker {
     line-height: normal;
   }
 
-  &_li:last-child .breadcrumbs_link {
-    color: $colorSelectorSite;
-    font-weight: 700px;
+  &_link:last-child {
+    color: #f16d7f;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
   }
 }
 
@@ -247,6 +251,49 @@ summary::-webkit-details-marker {
   }
 }
 
+.catalog_box_hidden {
+  max-width: 360px;
+  background-color: #f8f8f8;
+  padding-bottom: 20px;
+  &_card {
+    width: 100%;
+  }
+
+  &_textbox {
+    padding-left: 16px;
+    padding-top: 25px;
+
+    &_title {
+      color: #000;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      padding-bottom: 12px;
+    }
+    &_text {
+      width: 314px;
+      color: #5d5d5d;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      padding-bottom: 18px;
+    }
+    &_price {
+      color: $colorSelectorSite;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    // .hidden {
+    //   display: none;
+    // }
+  }
+}
+
 .catalog_box2 {
   width: 360px;
   background-color: #f8f8f8;
@@ -343,31 +390,31 @@ summary::-webkit-details-marker {
     gap: 16px;
   }
 
-  .catalog_box_hidden{
+  .catalog_box_hidden {
     display: none;
-    &_card{
+    &_card {
       display: none;
     }
-  
-    &_textbox{
+
+    &_textbox {
       display: none;
     }
   }
 }
 
-@media (max-width: 375px){
-  .top-head{
+@media (max-width: 375px) {
+  .top-head {
     display: grid;
     justify-content: center;
     padding-top: 24px;
     gap: 32px;
   }
 
-  .filter_heading{
+  .filter_heading {
     display: none;
   }
 
-  .catalog{
+  .catalog {
     justify-content: center;
     margin-left: 0px;
   }

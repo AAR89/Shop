@@ -605,7 +605,7 @@ body {
 
   .subscribe {
     display: grid;
-    // grid-template-columns: repeat(1, 550px);
+    grid-template-columns: repeat(1, 550px);
     justify-content: center;
     gap: 48px;
     padding-top: 64px;

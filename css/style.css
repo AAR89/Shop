@@ -132,7 +132,7 @@ summary::-webkit-details-marker {
   list-style-type: none;
   display: flex;
 }
-.breadcrumbs_li:not(:last-child):after {
+.breadcrumbs_link:not(:last-child):after {
   content: " /";
   padding-left: 8px;
   padding-right: 8px;
@@ -149,9 +149,13 @@ summary::-webkit-details-marker {
   font-weight: 300;
   line-height: normal;
 }
-.breadcrumbs_li:last-child .breadcrumbs_link {
+.breadcrumbs_link:last-child {
   color: #f16d7f;
-  font-weight: 700px;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .filter-sort {
@@ -325,6 +329,43 @@ summary::-webkit-details-marker {
 }
 .catalog_box_textbox .hidden {
   display: none;
+}
+
+.catalog_box_hidden {
+  max-width: 360px;
+  background-color: #f8f8f8;
+  padding-bottom: 20px;
+}
+.catalog_box_hidden_card {
+  width: 100%;
+}
+.catalog_box_hidden_textbox {
+  padding-left: 16px;
+  padding-top: 25px;
+}
+.catalog_box_hidden_textbox_title {
+  color: #000;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 12px;
+}
+.catalog_box_hidden_textbox_text {
+  width: 314px;
+  color: #5d5d5d;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding-bottom: 18px;
+}
+.catalog_box_hidden_textbox_price {
+  color: #f16d7f;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .catalog_box2 {
@@ -1542,6 +1583,7 @@ body {
   }
   .subscribe {
     display: grid;
+    grid-template-columns: repeat(1, 550px);
     justify-content: center;
     gap: 48px;
     padding-top: 64px;
