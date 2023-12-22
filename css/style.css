@@ -961,6 +961,43 @@ a:hover {
   line-height: normal;
 }
 
+@media (max-width: 768px) {
+  .registration {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+    margin-top: 40px;
+    margin-left: 17px;
+  }
+  .registration__right_title {
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+  .registration__right_text {
+    width: 354px;
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+  .registration__right_text_box_img {
+    width: 20px;
+    height: 16px;
+    flex-shrink: 0;
+  }
+  .registration__right_text_box_text {
+    width: 311px;
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+}
 html,
 body {
   width: 100%;
