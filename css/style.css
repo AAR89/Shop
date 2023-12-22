@@ -542,6 +542,9 @@ a:hover {
   background-color: #f16d7f;
   border: 3px solid transparent;
 }
+.card_box_left .button_text:hover {
+  color: #fff;
+}
 .card_box_right {
   margin-top: 17px;
   white-space: nowrap;
@@ -702,6 +705,7 @@ a:hover {
   }
   .card_box_left .card_icon {
     margin-left: 80px;
+    fill: #575757;
   }
   .card_box_left .button-box {
     justify-content: center;
@@ -715,6 +719,103 @@ a:hover {
   }
   .card_box_right .total {
     margin-top: 37px;
+  }
+}
+@media (max-width: 375px) {
+  .top-head {
+    padding-top: 50px;
+    padding-bottom: 63px;
+  }
+  .card_box {
+    margin-top: 39px;
+  }
+  .card_box_left .card {
+    margin-bottom: 32px;
+    width: 358px;
+    height: 188px;
+  }
+  .card_box_left .card_img {
+    height: 188px;
+    flex-shrink: 0;
+  }
+  .card_box_left .card_text {
+    color: #222;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 13px;
+    padding-left: 13px;
+  }
+  .card_box_left .card_text_light {
+    color: #6f6e6e;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .card_box_left .card_text_title {
+    width: 140px;
+    height: 35px;
+    flex-shrink: 0;
+    margin-bottom: 25px;
+  }
+  .card_box_left .card_text_main {
+    color: #575757;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .card_box_left .card_text_price {
+    color: #ef5b70;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .card_box_left .card_text #input1 {
+    width: 24.16px;
+    height: 15.328px;
+    flex-shrink: 0;
+  }
+  .card_box_left .card_icon {
+    padding: 0px;
+    margin-left: 30px;
+    margin-top: 14px;
+    width: 9px;
+    height: 11px;
+    flex-shrink: 0;
+  }
+  .card_box_left .button-box {
+    gap: 9px;
+    flex-shrink: 0;
+  }
+  .card_box_left .button-box .button {
+    width: 175px;
+    height: 33px;
+    color: #575757;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .card_box_right {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    margin-top: 48px;
+  }
+  .card_box_right .submit {
+    color: #575757;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .card_box_right .total {
+    margin-top: 48px;
   }
 }
 .registration {

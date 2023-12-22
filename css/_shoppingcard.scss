@@ -103,9 +103,10 @@
       background-color: $colorSelectorSite;
       border: 3px solid transparent;
     }
-    // .button_text:hover {
-    //   color: #fff;
-    // }
+
+    .button_text:hover {
+      color: #fff;
+    }
   }
 
   &_right {
@@ -270,6 +271,7 @@
         }
         &_icon {
           margin-left: 80px;
+          fill: #575757;
         }
       }
 
@@ -285,11 +287,120 @@
       gap: 15px;
       margin-top: 64px;
 
-      .total{
+      .total {
         margin-top: 37px;
       }
     }
+  }
+}
 
-   
+@media (max-width: 375px) {
+  .top-head {
+    padding-top: 50px;
+    padding-bottom: 63px;
+  }
+
+  .card_box {
+    margin-top: 39px;
+    margin-bottom: 96px
+    &_left {
+      .card {
+        margin-bottom: 32px;
+        width: 358px;
+        height: 188px;
+        &_img {
+          height: 188px;
+          flex-shrink: 0;
+        }
+
+        &_text {
+          color: #222;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          padding-top: 13px;
+          padding-left: 13px;
+
+          &_light {
+            color: #6f6e6e;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+
+          &_title {
+            width: 140px;
+            height: 35px;
+            flex-shrink: 0;
+            margin-bottom: 25px;
+          }
+
+          &_main {
+            color: #575757;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+
+          &_price {
+            color: #ef5b70;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+
+          #input1 {
+            width: 24.16px;
+            height: 15.328px;
+            flex-shrink: 0;
+          }
+        }
+        &_icon {
+          padding: 0px;
+          margin-left: 30px;
+          margin-top: 14px;
+          width: 9px;
+          height: 11px;
+          flex-shrink: 0;
+        }
+      }
+      .button-box {
+        gap: 9px;
+        flex-shrink: 0;
+
+        .button {
+          width: 175px;
+          height: 33px;
+          color: #575757;
+          text-align: center;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+    }
+    &_right {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      justify-items: center;
+      margin-top: 48px;
+
+      .submit {
+        color: #575757;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+
+      .total{
+        margin-top: 48px;
+      }
+    }
   }
 }
