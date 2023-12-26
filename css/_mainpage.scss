@@ -603,6 +603,15 @@ body {
 }
 
 @media (max-width: 768px) {
+  .header {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .headNav {
+    padding-left: 0px;
+  }
+
   .headNav_left {
     margin-left: 32px;
   }
@@ -633,6 +642,12 @@ body {
         line-height: normal;
       }
     }
+  }
+
+  .catalog {
+    max-width: 750px;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
   }
 
   .selector {
@@ -970,7 +985,7 @@ body {
     flex-shrink: 0;
   }
 
-  .product{
+  .product {
     padding-left: 70px;
   }
 
