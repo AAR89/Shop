@@ -1725,6 +1725,109 @@ body {
     padding-right: 32px;
   }
 }
+@media (max-width: 425px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .header {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .headNav {
+    padding-left: 0px;
+  }
+  .headNav_left {
+    align-items: center;
+    margin-left: 0px;
+  }
+  .headNav_right {
+    align-items: center;
+  }
+  .hoverHead {
+    display: none;
+  }
+  .headNav_right_basket_box {
+    display: none;
+  }
+  .headNav_right {
+    margin-right: 0px;
+  }
+  .main {
+    width: 425px;
+  }
+  .main_img {
+    display: none;
+  }
+  .main_heading {
+    display: flex;
+    gap: 15px;
+    margin-top: 148px;
+    margin-left: 56px;
+    margin-bottom: 148px;
+    margin-right: 56px;
+    justify-content: center;
+    align-items: center;
+  }
+  .main_heading_h1 {
+    white-space: nowrap;
+  }
+  .main_heading_h2 {
+    white-space: nowrap;
+  }
+  .nav_lists {
+    padding-left: 375px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 32px;
+  }
+  .selector {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  .nav_list {
+    width: 360px;
+    height: 260px;
+  }
+  .nav_list_dark {
+    width: 360px;
+    height: 260px;
+  }
+  .nav_box_text {
+    left: 22cqb;
+    bottom: 18cqh;
+  }
+  .nav_box_big {
+    width: 360px;
+    height: 58px;
+  }
+  .nav_list_big {
+    width: 360px;
+  }
+  .nav_box_big_text_big {
+    left: 20cqb;
+    bottom: -4cqh;
+  }
+  .nav_list_big_dark {
+    width: 360px;
+  }
+  .product {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .subscribe {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .subscribe_left {
+    width: 400px;
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+    justify-items: center;
+  }
+}
 @media (max-width: 375px) {
   html,
   body {
@@ -1779,8 +1882,8 @@ body {
     gap: 32px;
   }
   .nav_list {
-    width: 343px;
-    height: 247px;
+    width: 411.6px;
+    height: 296.4px;
     flex-shrink: 0;
   }
   .nav_list_dark {
@@ -1793,6 +1896,11 @@ body {
     bottom: 16cqh;
   }
   .nav_list_big {
+    width: 412.8px;
+    height: 133.2px;
+    flex-shrink: 0;
+  }
+  .nav_list_big_dark {
     width: 343.262px;
     height: 111px;
     flex-shrink: 0;
