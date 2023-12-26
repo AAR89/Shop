@@ -152,6 +152,13 @@
   }
 }
 
+@media (max-width: 1024px){
+  .registration{
+    margin-left: 10px;
+    gap: 30px;
+  }
+}
+
 @media (max-width: 768px) {
   .registration {
     display: grid;
@@ -195,6 +202,19 @@
         }
       }
     }
+  }
+}
+
+@media (max-width: 425px) {
+  .top-head_heading {
+    padding-left: 0px;
+  }
+
+  .registration {
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 30px;
+    margin-bottom: 96px;
+    gap: 0px;
   }
 }
 

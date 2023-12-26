@@ -1235,6 +1235,12 @@ summary::-webkit-details-marker {
   line-height: normal;
 }
 
+@media (max-width: 1024px) {
+  .registration {
+    margin-left: 10px;
+    gap: 30px;
+  }
+}
 @media (max-width: 768px) {
   .registration {
     display: grid;
@@ -1270,6 +1276,17 @@ summary::-webkit-details-marker {
     font-style: normal;
     font-weight: 300;
     line-height: normal;
+  }
+}
+@media (max-width: 425px) {
+  .top-head_heading {
+    padding-left: 0px;
+  }
+  .registration {
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 30px;
+    margin-bottom: 96px;
+    gap: 0px;
   }
 }
 @media (max-width: 375px) {
