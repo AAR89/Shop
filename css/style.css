@@ -572,6 +572,33 @@ summary::-webkit-details-marker {
     padding-left: 10px;
   }
 }
+@media (max-width: 425px) {
+  .top-head {
+    display: grid;
+    justify-content: center;
+    padding-top: 24px;
+    gap: 32px;
+    justify-items: center;
+    padding-bottom: 46px;
+  }
+  .top-head_heading {
+    padding-left: 0px;
+  }
+  .filter_heading {
+    display: none;
+  }
+  .catalog {
+    justify-content: center;
+    margin-left: 0px;
+  }
+  .breadcrumbs {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .sort {
+    padding-right: 8px;
+  }
+}
 @media (max-width: 375px) {
   .top-head {
     display: grid;
@@ -1881,6 +1908,11 @@ body {
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
     width: 300px;
+  }
+  .catalog {
+    max-width: 400px;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
   }
   .nav_list {
     width: 360px;

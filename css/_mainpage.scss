@@ -840,6 +840,12 @@ body {
     width: 300px;
   }
 
+  .catalog {
+    max-width: 400px;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+
   .nav_list {
     width: 360px;
     height: 260px;
