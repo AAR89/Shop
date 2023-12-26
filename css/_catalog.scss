@@ -531,8 +531,6 @@ summary::-webkit-details-marker {
   .sort {
     padding-right: 8px;
   }
-
-  
 }
 
 @media (max-width: 375px) {
@@ -546,6 +544,10 @@ summary::-webkit-details-marker {
 
   .filter_heading {
     display: none;
+  }
+
+  .sort {
+    padding-left: 0px;
   }
 
   .catalog {

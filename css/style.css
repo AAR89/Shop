@@ -610,6 +610,9 @@ summary::-webkit-details-marker {
   .filter_heading {
     display: none;
   }
+  .sort {
+    padding-left: 0px;
+  }
   .catalog {
     justify-content: center;
     margin-left: 0px;
@@ -2002,6 +2005,9 @@ body {
   .selector {
     grid-template-columns: repeat(1, minmax(200px, 1fr));
     gap: 32px;
+  }
+  .catalog {
+    padding-left: 9px;
   }
   .nav_lists {
     padding-left: 15px;
