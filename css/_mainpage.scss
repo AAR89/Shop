@@ -503,9 +503,102 @@ body {
 }
 
 @media (max-width: 1024px) {
+  .header {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .headNav {
+    padding-left: 30px;
+  }
+
+  .main {
+    &_img {
+      margin-left: -100px;
+      width: calc(800px * 0.7);
+      height: calc(764px * 0.7);
+      flex-shrink: 0;
+    }
+  }
+
+  .catalog {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(2px, 1fr));
+  }
+
+  .nav_lists {
+    gap: 23px;
+  }
+
+  .selector {
+    gap: 23px;
+  }
+
+  .nav_list {
+    width: calc(360px * 0.8);
+    height: calc(260px * 0.8);
+    flex-shrink: 0;
+  }
+
+  .nav_list_dark {
+    width: calc(360px * 0.8);
+    height: calc(260px * 0.8);
+    flex-shrink: 0;
+  }
+
+  .nav_box_big {
+    width: calc(1140px * 0.8);
+    height: calc(180px * 0.8);
+    flex-shrink: 0;
+  }
+
+  .nav_list_big_dark {
+    width: calc(1140px * 0.8);
+    height: calc(180px * 0.8);
+    flex-shrink: 0;
+  }
+
+  .product {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    padding-left: 60px;
+    padding-right: 70px;
+
+    &_card {
+      width: calc(360px * 0.8);
+      &_img_top {
+        width: calc(360px * 0.8);
+        height: calc(420px * 0.8);
+      }
+
+      &_title {
+        padding-left: 10px;
+      }
+
+      &_text {
+        padding-left: 10px;
+      }
+
+      &_price {
+        padding-left: 10px;
+      }
+    }
+  }
+
+  .promo {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .subscribe {
+    padding-left: 60px;
+    padding-right: 60px;
+    gap: 300px;
+  }
+
   .footer {
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 }
 
@@ -545,7 +638,10 @@ body {
   .selector {
     display: grid;
     grid-template-columns: repeat(3, minmax(200px, 1fr));
-    gap: 32px;
+    width: 736px;
+    flex-shrink: 0;
+    gap: 20px;
+
   }
 
   .nav_box_text {
@@ -563,6 +659,12 @@ body {
     flex-direction: column;
   }
 
+.nav_box_big{
+  width: 736px;
+  height: 116.043px;
+  flex-shrink: 0;
+}
+
   .nav_list {
     width: 232px;
     height: 167px;
@@ -576,6 +678,7 @@ body {
   .nav_list_big {
     width: 736px;
     height: 116.043px;
+    flex-shrink: 0;
   }
 
   .nav_list_big_dark {
@@ -586,6 +689,15 @@ body {
   .product {
     gap: 16px;
     justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+
+    &_card{
+      width: 360px;
+      &_img_top{
+        width: 360px;
+        height: 420px;
+      }
+    }
   }
 
   .promo {
@@ -642,6 +754,10 @@ body {
   body {
     width: 100%;
     overflow-x: hidden;
+  }
+
+  .headNav {
+    padding-left: 30px;
   }
 
   .headNav_left {

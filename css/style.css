@@ -1528,9 +1528,83 @@ body {
 }
 
 @media (max-width: 1024px) {
+  .header {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .headNav {
+    padding-left: 30px;
+  }
+  .main_img {
+    margin-left: -100px;
+    width: 560px;
+    height: 534.8px;
+    flex-shrink: 0;
+  }
+  .catalog {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(2px, 1fr));
+  }
+  .nav_lists {
+    gap: 23px;
+  }
+  .selector {
+    gap: 23px;
+  }
+  .nav_list {
+    width: 288px;
+    height: 208px;
+    flex-shrink: 0;
+  }
+  .nav_list_dark {
+    width: 288px;
+    height: 208px;
+    flex-shrink: 0;
+  }
+  .nav_box_big {
+    width: 912px;
+    height: 144px;
+    flex-shrink: 0;
+  }
+  .nav_list_big_dark {
+    width: 912px;
+    height: 144px;
+    flex-shrink: 0;
+  }
+  .product {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    padding-left: 60px;
+    padding-right: 70px;
+  }
+  .product_card {
+    width: 288px;
+  }
+  .product_card_img_top {
+    width: 288px;
+    height: 336px;
+  }
+  .product_card_title {
+    padding-left: 10px;
+  }
+  .product_card_text {
+    padding-left: 10px;
+  }
+  .product_card_price {
+    padding-left: 10px;
+  }
+  .promo {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .subscribe {
+    padding-left: 60px;
+    padding-right: 60px;
+    gap: 300px;
+  }
   .footer {
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 }
 @media (max-width: 768px) {
@@ -1559,7 +1633,9 @@ body {
   .selector {
     display: grid;
     grid-template-columns: repeat(3, minmax(200px, 1fr));
-    gap: 32px;
+    width: 736px;
+    flex-shrink: 0;
+    gap: 20px;
   }
   .nav_box_text {
     position: absolute;
@@ -1575,6 +1651,11 @@ body {
     display: flex;
     flex-direction: column;
   }
+  .nav_box_big {
+    width: 736px;
+    height: 116.043px;
+    flex-shrink: 0;
+  }
   .nav_list {
     width: 232px;
     height: 167px;
@@ -1586,6 +1667,7 @@ body {
   .nav_list_big {
     width: 736px;
     height: 116.043px;
+    flex-shrink: 0;
   }
   .nav_list_big_dark {
     width: 736px;
@@ -1594,6 +1676,14 @@ body {
   .product {
     gap: 16px;
     justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .product_card {
+    width: 360px;
+  }
+  .product_card_img_top {
+    width: 360px;
+    height: 420px;
   }
   .promo {
     display: grid;
@@ -1640,6 +1730,9 @@ body {
   body {
     width: 100%;
     overflow-x: hidden;
+  }
+  .headNav {
+    padding-left: 30px;
   }
   .headNav_left {
     align-items: center;
