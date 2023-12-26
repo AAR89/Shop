@@ -1916,6 +1916,7 @@ body {
     max-width: 400px;
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
+    padding-left: 25px;
   }
   .nav_list {
     width: 360px;
