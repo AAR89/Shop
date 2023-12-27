@@ -84,6 +84,7 @@ summary::-webkit-details-marker {
   }
 
   &[open] {
+    position: absolute;
     background: #fff;
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
   }

@@ -1,3 +1,8 @@
+.registrtionCentering {
+  padding-left: calc(50% - $registrationSize/2);
+  padding-right: calc(50% - $registrationSize/2);
+}
+
 .registration {
   display: flex;
   gap: 128px;
@@ -152,8 +157,8 @@
   }
 }
 
-@media (max-width: 1024px){
-  .registration{
+@media (max-width: 1024px) {
+  .registration {
     margin-left: 10px;
     gap: 30px;
   }
